@@ -1,0 +1,52 @@
+.maincontainer{
+    width:100%;
+    height:100%;
+    text-align: center;
+
+}
+
+.loader{
+    width: 500px;
+    height: 500px;
+    margin-top: 4%;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    position:absolute;
+}
+
+
+.textloader span:nth-child(1){
+    position:absolute;
+    justify-content: center;
+    margin-top: 19%;
+    display: inline;
+    font-size: 80px;
+    font-family: 'WoodenLog';
+}
+
+@keyframes rotation{
+    0% {
+        transform: rotate(0deg);
+        opacity:10%;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity:100%;
+    }
+}
+
+@keyframes fade{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:100;
+    }
+}
+
+@font-face {
+    font-family: 'WoodenLog';
+    src: local('WoodenLog'), url('./assets/WoodenLog.ttf') format('ttf');
+  }

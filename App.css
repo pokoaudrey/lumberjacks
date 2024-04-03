@@ -1,0 +1,105 @@
+.App {
+  background-image:  url(assets/background.jpg);
+  background-size: 100%;
+  position:relative;
+  overflow-x: hidden;
+}
+
+
+
+.sawstyle{
+  opacity:0.8;
+  mix-blend-mode:exclusion;
+  margin-left: -53%;
+  top:-200px;
+  height:1200px;
+  filter: invert(70%) sepia(100%) saturate(122%) hue-rotate(87deg) brightness(30%) contrast(119%);
+  transform-origin: 50% 50%;
+  position:fixed;
+  justify-content: left;
+  display: block;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.App-header {
+  background-image: url(assets/lightpattern.jpg);
+  background-size:1000px;
+  top:0;
+  min-height: 15vh;
+  width:90%;
+  position:absolute;
+  overflow: hidden;
+}
+
+.sidecolumn {
+  background-image: url(assets/lightpattern.jpg);
+  background-size: 1000px;
+  opacity:1;
+  top:0;
+  min-height: 100vh;
+  width:24%;
+  position:fixed;
+}
+
+.title{
+  font-family: 'WoodenLog';
+  font-size: 75px;
+  text-align: left;
+  top:20%;
+  left:10px;
+  color: white;
+  position:fixed;
+  mix-blend-mode: difference;
+  opacity:0.9;
+  overflow: hidden;
+}
+
+.subtitle{
+  font-family:'outline';
+  font-size: 30px;
+  top:70%;
+  left:10px;
+  color: rgb(49, 49, 104);
+  opacity:1;
+  position:fixed;
+}
+.verticalcolumn{
+  background-image: url(assets/tab2.png);
+  background-size: 50%;
+  top:0px;
+  left:0px;
+  position:absolute;
+  z-index: 1;
+}
+
+
+@keyframes spin{
+  0% {
+    transform: translate(-800px, -200px);
+      transform: rotate(270deg);
+      overflow-block: hidden;
+      overflow-x: hidden;
+  }
+  100% {
+    transform: rotate(300deg);
+    overflow-block: hidden;
+    overflow-y: hidden;
+}
+}
+
+@font-face {
+  font-family: 'WoodenLog';
+  src: local('WoodenLog'), url('./assets/WoodenLog.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'woodcutter';
+  src: local('woodcutter'), url('./assets/woodcutter.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'outline';
+  src: local('outline'), url('./assets/outline.ttf') format('ttf');
+}

@@ -1,0 +1,189 @@
+/* ButtonContent.css */
+
+.buttoncontainer{
+  position:absolute;
+  height:10%;
+  top:20px;
+  left: 22%;
+  justify-content: space-around;
+  overflow: hidden;
+  min-width: 1000px;
+}
+
+.button{
+  font-family: 'infinity';
+  text-align: center;
+  margin-left: 40px;
+  font-size:45px;
+  color:rgb(200, 153, 102);
+  height:80px;
+  bottom:10px;
+  justify-content: space-around;
+  position:relative;
+  width:230px;
+  border: none;
+  background-image:  url(assets/gradientsmall.jpg);
+  background-size: 300px;
+}
+
+.button::after{
+  content:attr(data-content);
+  position:absolute;
+  font-size: 48px;
+  font-family: 'infinity';
+  top:0px;
+  left:0px;
+  right:0px;
+  color:white;
+  opacity:0.8;
+ }
+
+
+.button:hover{
+ background-color: white;
+ color:black;
+}
+
+.button:pressed{
+  background-color: white;
+  color:black;
+ }
+
+  .services {
+    background-image: url(assets/websiteflyer.jpg);
+    background-size: 70%;
+    background-repeat:no-repeat;
+    top:130px;
+    left:500px;
+    right:20px;
+    position: relative;
+    height:200vh;
+    width:72.5vw;
+    overflow: hidden;
+    overflow-x: hidden;
+    opacity:1;
+    font-size:40px;
+    font-family: 'text';
+  
+
+  }
+  
+  .reviews {
+    background-image: url(assets/reviews.jpg);
+    background-size: 70%;
+    background-repeat:no-repeat;
+    top:130px;
+    left:500px;
+    right:20px;
+    position: relative;
+    height:2500px;
+    width:72.5vw;
+    overflow: hidden;
+    overflow-x: hidden;
+    opacity:1;
+    font-size:40px;
+    font-family: 'text';
+  
+
+  }
+
+
+  .history {
+    background-image: url(assets/historyflyer.jpg);
+    background-size: 65%;
+    background-repeat:no-repeat;
+    top:130px;
+    left: 400px;
+    right:5px;
+    position: relative;
+    height:4000px;
+    opacity:1;
+    font-size:40px;
+    font-family: 'text';
+  
+
+  }
+
+  .contact {
+    background-image: url(assets/contact.jpg);
+    background-size: 60%;
+    background-repeat:no-repeat;
+    top:130px;
+    left:600px;
+    right:20px;
+    position: relative;
+    height:200vh;
+    width:72.5vw;
+    overflow: hidden;
+    opacity:0.9;
+    font-size:40px;
+    font-family: 'text';
+  
+
+  }
+
+  .phone {
+
+    top:200px;
+    left:180px;
+    margin-right: auto;
+    right:20px;
+    font-size:40px;
+    font-family: 'text';
+    position:relative;
+
+  }
+
+  .address {
+
+    top:290px;
+    right:200px;
+    font-size:40px;
+    text-align: center;
+    font-family: 'infinity';
+    position:relative;
+
+  }
+  .map {
+    align-items: center;
+    top:470px;
+    right:520px;
+    position:absolute;
+
+  }
+  .facebook {
+    align-items: center;
+    top:930px;
+    right:550px;
+    position:absolute;
+    font-family: "infinity";
+    font-size:60px;
+
+  }
+
+  .facebooktitle {
+    align-items: center;
+    position:relative;
+    left:240px;
+    top:690px;
+    font-family: "infinity";
+    font-size:30px;
+
+  }
+
+
+
+  @font-face {
+    font-family: 'outline';
+    src: local('outline'), url('./assets/outline.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'infinity';
+    src: local('infinity'), url('./assets/infinity.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'text';
+    src: local('text'), url('./assets/text.ttf') format('truetype');
+  }
